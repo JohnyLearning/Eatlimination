@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A06D47724495BB300BF8271 /* StartController-FoodTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06D47624495BB300BF8271 /* StartController-FoodTableDelegate.swift */; };
+		3A2A73CA24428D6600AF2D64 /* SpoonFoodAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73C924428D6600AF2D64 /* SpoonFoodAuto.swift */; };
+		3A2A73CE24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73CD24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift */; };
+		3A2A73D02443BDD500AF2D64 /* FoodDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73CF2443BDD500AF2D64 /* FoodDetailController.swift */; };
+		3A2A73D3244417A200AF2D64 /* FoodDetail-TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73D2244417A200AF2D64 /* FoodDetail-TableDelegate.swift */; };
+		3A3A598C244CD55C009C92D3 /* DietFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A598B244CD55C009C92D3 /* DietFoodCell.swift */; };
+		3A453CC7244282BD00CBD3F4 /* SpoonacularApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A453CC6244282BD00CBD3F4 /* SpoonacularApi.swift */; };
+		3A4C275D244943A100D63334 /* DBOProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C275C244943A100D63334 /* DBOProvider.swift */; };
+		3A5E349124521C5800F9996F /* DietFoodsController-DragDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E349024521C5800F9996F /* DietFoodsController-DragDelegate.swift */; };
+		3A6B1E332454770800020225 /* SymptomRecordDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B1E322454770800020225 /* SymptomRecordDataObject.swift */; };
+		3A6B1E352454AD0F00020225 /* SymptomDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6B1E342454AD0F00020225 /* SymptomDetailController.swift */; };
+		3A8792FF2446B6D400369DB3 /* FoodDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8792FE2446B6D400369DB3 /* FoodDataObject.swift */; };
+		3A8793012446B6E800369DB3 /* DietDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8793002446B6E800369DB3 /* DietDataObject.swift */; };
+		3A8793032446BBBF00369DB3 /* BaseDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8793022446BBBF00369DB3 /* BaseDataObject.swift */; };
+		3A8A10652451390D00E7667A /* AddSymptomsController-TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8A10642451390D00E7667A /* AddSymptomsController-TableDelegate.swift */; };
+		3A992FE6244148B800508A5C /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FE4244148B800508A5C /* BaseApi.swift */; };
+		3A992FED2441527E00508A5C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FEC2441527D00508A5C /* ApiError.swift */; };
+		3A992FF22442293D00508A5C /* Eatlimination.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FF02442293D00508A5C /* Eatlimination.xcdatamodeld */; };
+		3A992FF52442349400508A5C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FF42442349400508A5C /* CoreDataManager.swift */; };
+		3A992FF8244252E000508A5C /* AddFoodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FF7244252E000508A5C /* AddFoodsController.swift */; };
+		3A992FFA24425FBD00508A5C /* AddFoodsController-SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FF924425FBD00508A5C /* AddFoodsController-SearchDelegate.swift */; };
+		3A992FFD244260C200508A5C /* AddFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A992FFC244260C200508A5C /* AddFoodCell.swift */; };
+		3AA680072455120D00D06B44 /* SymptomRecordingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA680062455120D00D06B44 /* SymptomRecordingCell.swift */; };
+		3AA7897E244B8E5E00B74951 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7897D244B8E5E00B74951 /* FoodCell.swift */; };
+		3AA78980244C075700B74951 /* DietFoodsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7897F244C075700B74951 /* DietFoodsController.swift */; };
+		3AA78982244C079A00B74951 /* DietFoodsController-CollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA78981244C079A00B74951 /* DietFoodsController-CollectionDelegate.swift */; };
+		3AA78984244C0EBA00B74951 /* BaseEatliminationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA78983244C0EBA00B74951 /* BaseEatliminationController.swift */; };
+		3ABD8FD3245093F500FEB034 /* DietSymptomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FD2245093F500FEB034 /* DietSymptomsController.swift */; };
+		3ABD8FD52450A0C400FEB034 /* DietSymptoms-TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FD42450A0C400FEB034 /* DietSymptoms-TableDelegate.swift */; };
+		3ABD8FD72450B13600FEB034 /* DietSymptomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FD62450B13600FEB034 /* DietSymptomCell.swift */; };
+		3ABD8FD92450C16300FEB034 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FD82450C16300FEB034 /* LoadingButton.swift */; };
+		3ABD8FDB245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FDA245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift */; };
+		3ABD8FDD24512FC300FEB034 /* AddSymptomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FDC24512FC300FEB034 /* AddSymptomsController.swift */; };
+		3ABD8FDF2451315100FEB034 /* AddSymptomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD8FDE2451315100FEB034 /* AddSymptomCell.swift */; };
+		3AC23008244129740043AEC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC23007244129740043AEC4 /* AppDelegate.swift */; };
+		3AC2300A244129740043AEC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC23009244129740043AEC4 /* SceneDelegate.swift */; };
+		3AC2300C244129740043AEC4 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2300B244129740043AEC4 /* StartController.swift */; };
+		3AC2300F244129740043AEC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC2300D244129740043AEC4 /* Main.storyboard */; };
+		3AC23011244129760043AEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC23010244129760043AEC4 /* Assets.xcassets */; };
+		3AC23014244129760043AEC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC23012244129760043AEC4 /* LaunchScreen.storyboard */; };
+		3AC2301F244129760043AEC4 /* EatliminationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2301E244129760043AEC4 /* EatliminationTests.swift */; };
+		3AC2302A244129760043AEC4 /* EatliminationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC23029244129760043AEC4 /* EatliminationUITests.swift */; };
+		3AD9893B244CA7400095CA2C /* SymptomDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9893A244CA7400095CA2C /* SymptomDataObject.swift */; };
+		3AD9893D244CABAF0095CA2C /* InitialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD9893C244CABAF0095CA2C /* InitialData.swift */; };
+		3AE3E0EA24550DB700D02509 /* SymptomRecordingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3E0E924550DB700D02509 /* SymptomRecordingsController.swift */; };
+		3AFA762E2452672500425941 /* RecycleBinFoodDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA762D2452672500425941 /* RecycleBinFoodDropView.swift */; };
+		3AFA763224529DA700425941 /* CallbackProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA763124529DA700425941 /* CallbackProtocols.swift */; };
+		3AFA763424529ED300425941 /* DietDetailsTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA763324529ED300425941 /* DietDetailsTabBar.swift */; };
+		3AFA76362452A24000425941 /* BaseDietDetailsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA76352452A24000425941 /* BaseDietDetailsTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AC2301B244129760043AEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AC22FFC244129740043AEC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AC23003244129740043AEC4;
+			remoteInfo = Eatlimination;
+		};
+		3AC23026244129760043AEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AC22FFC244129740043AEC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AC23003244129740043AEC4;
+			remoteInfo = Eatlimination;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A06D47624495BB300BF8271 /* StartController-FoodTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StartController-FoodTableDelegate.swift"; sourceTree = "<group>"; };
+		3A2A73C924428D6600AF2D64 /* SpoonFoodAuto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonFoodAuto.swift; sourceTree = "<group>"; };
+		3A2A73CD24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddFoodsController-TableDelegate.swift"; sourceTree = "<group>"; };
+		3A2A73CF2443BDD500AF2D64 /* FoodDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailController.swift; sourceTree = "<group>"; };
+		3A2A73D2244417A200AF2D64 /* FoodDetail-TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodDetail-TableDelegate.swift"; sourceTree = "<group>"; };
+		3A3A598B244CD55C009C92D3 /* DietFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFoodCell.swift; sourceTree = "<group>"; };
+		3A453CC6244282BD00CBD3F4 /* SpoonacularApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonacularApi.swift; sourceTree = "<group>"; };
+		3A4C275C244943A100D63334 /* DBOProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBOProvider.swift; sourceTree = "<group>"; };
+		3A5E349024521C5800F9996F /* DietFoodsController-DragDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DietFoodsController-DragDelegate.swift"; sourceTree = "<group>"; };
+		3A6B1E322454770800020225 /* SymptomRecordDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomRecordDataObject.swift; sourceTree = "<group>"; };
+		3A6B1E342454AD0F00020225 /* SymptomDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomDetailController.swift; sourceTree = "<group>"; };
+		3A8792FE2446B6D400369DB3 /* FoodDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataObject.swift; sourceTree = "<group>"; };
+		3A8793002446B6E800369DB3 /* DietDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietDataObject.swift; sourceTree = "<group>"; };
+		3A8793022446BBBF00369DB3 /* BaseDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataObject.swift; sourceTree = "<group>"; };
+		3A8A10642451390D00E7667A /* AddSymptomsController-TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddSymptomsController-TableDelegate.swift"; sourceTree = "<group>"; };
+		3A992FE4244148B800508A5C /* BaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
+		3A992FEC2441527D00508A5C /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		3A992FF12442293D00508A5C /* Earlimination.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Earlimination.xcdatamodel; sourceTree = "<group>"; };
+		3A992FF42442349400508A5C /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3A992FF7244252E000508A5C /* AddFoodsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodsController.swift; sourceTree = "<group>"; };
+		3A992FF924425FBD00508A5C /* AddFoodsController-SearchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddFoodsController-SearchDelegate.swift"; sourceTree = "<group>"; };
+		3A992FFC244260C200508A5C /* AddFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodCell.swift; sourceTree = "<group>"; };
+		3AA680062455120D00D06B44 /* SymptomRecordingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomRecordingCell.swift; sourceTree = "<group>"; };
+		3AA7897D244B8E5E00B74951 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		3AA7897F244C075700B74951 /* DietFoodsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFoodsController.swift; sourceTree = "<group>"; };
+		3AA78981244C079A00B74951 /* DietFoodsController-CollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DietFoodsController-CollectionDelegate.swift"; sourceTree = "<group>"; };
+		3AA78983244C0EBA00B74951 /* BaseEatliminationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEatliminationController.swift; sourceTree = "<group>"; };
+		3ABD8FD2245093F500FEB034 /* DietSymptomsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietSymptomsController.swift; sourceTree = "<group>"; };
+		3ABD8FD42450A0C400FEB034 /* DietSymptoms-TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DietSymptoms-TableDelegate.swift"; sourceTree = "<group>"; };
+		3ABD8FD62450B13600FEB034 /* DietSymptomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietSymptomCell.swift; sourceTree = "<group>"; };
+		3ABD8FD82450C16300FEB034 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		3ABD8FDA245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DietFoodsController-LayoutExtension.swift"; sourceTree = "<group>"; };
+		3ABD8FDC24512FC300FEB034 /* AddSymptomsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymptomsController.swift; sourceTree = "<group>"; };
+		3ABD8FDE2451315100FEB034 /* AddSymptomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSymptomCell.swift; sourceTree = "<group>"; };
+		3AC23004244129740043AEC4 /* Eatlimination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatlimination.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC23007244129740043AEC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AC23009244129740043AEC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3AC2300B244129740043AEC4 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		3AC2300E244129740043AEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AC23010244129760043AEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AC23013244129760043AEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AC23015244129760043AEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC2301A244129760043AEC4 /* EatliminationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatliminationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC2301E244129760043AEC4 /* EatliminationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatliminationTests.swift; sourceTree = "<group>"; };
+		3AC23020244129760043AEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC23025244129760043AEC4 /* EatliminationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatliminationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC23029244129760043AEC4 /* EatliminationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatliminationUITests.swift; sourceTree = "<group>"; };
+		3AC2302B244129760043AEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD9893A244CA7400095CA2C /* SymptomDataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomDataObject.swift; sourceTree = "<group>"; };
+		3AD9893C244CABAF0095CA2C /* InitialData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialData.swift; sourceTree = "<group>"; };
+		3AE3E0E924550DB700D02509 /* SymptomRecordingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomRecordingsController.swift; sourceTree = "<group>"; };
+		3AFA762D2452672500425941 /* RecycleBinFoodDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecycleBinFoodDropView.swift; sourceTree = "<group>"; };
+		3AFA763124529DA700425941 /* CallbackProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackProtocols.swift; sourceTree = "<group>"; };
+		3AFA763324529ED300425941 /* DietDetailsTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietDetailsTabBar.swift; sourceTree = "<group>"; };
+		3AFA76352452A24000425941 /* BaseDietDetailsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDietDetailsTabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AC23001244129740043AEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC23017244129760043AEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC23022244129760043AEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A2A73D12443EB4B00AF2D64 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2300D244129740043AEC4 /* Main.storyboard */,
+				3AC23012244129760043AEC4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3A453CC924428B3700CBD3F4 /* Spoonacular */ = {
+			isa = PBXGroup;
+			children = (
+				3A2A73C924428D6600AF2D64 /* SpoonFoodAuto.swift */,
+			);
+			path = Spoonacular;
+			sourceTree = "<group>";
+		};
+		3A5E349224524A6A00F9996F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A8792FC2446B6A600369DB3 /* DBO */ = {
+			isa = PBXGroup;
+			children = (
+				3A8793022446BBBF00369DB3 /* BaseDataObject.swift */,
+				3A8792FE2446B6D400369DB3 /* FoodDataObject.swift */,
+				3A8793002446B6E800369DB3 /* DietDataObject.swift */,
+				3A4C275C244943A100D63334 /* DBOProvider.swift */,
+				3AD9893A244CA7400095CA2C /* SymptomDataObject.swift */,
+				3A6B1E322454770800020225 /* SymptomRecordDataObject.swift */,
+			);
+			path = DBO;
+			sourceTree = "<group>";
+		};
+		3A992FE2244146CD00508A5C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3A992FE724414AB700508A5C /* Model */,
+				3A992FE4244148B800508A5C /* BaseApi.swift */,
+				3A453CC6244282BD00CBD3F4 /* SpoonacularApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3A992FE724414AB700508A5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A453CC924428B3700CBD3F4 /* Spoonacular */,
+				3A992FEC2441527D00508A5C /* ApiError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A992FF32442294600508A5C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E349224524A6A00F9996F /* Model */,
+				3A8792FC2446B6A600369DB3 /* DBO */,
+				3A992FF42442349400508A5C /* CoreDataManager.swift */,
+				3A992FF02442293D00508A5C /* Eatlimination.xcdatamodeld */,
+				3AD9893C244CABAF0095CA2C /* InitialData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A992FF6244252C600508A5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AFA763124529DA700425941 /* CallbackProtocols.swift */,
+				3AA78983244C0EBA00B74951 /* BaseEatliminationController.swift */,
+				3AFA76352452A24000425941 /* BaseDietDetailsTabBarController.swift */,
+				3AC2300B244129740043AEC4 /* StartController.swift */,
+				3A06D47624495BB300BF8271 /* StartController-FoodTableDelegate.swift */,
+				3A992FF7244252E000508A5C /* AddFoodsController.swift */,
+				3A992FF924425FBD00508A5C /* AddFoodsController-SearchDelegate.swift */,
+				3A2A73CD24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift */,
+				3A2A73CF2443BDD500AF2D64 /* FoodDetailController.swift */,
+				3A2A73D2244417A200AF2D64 /* FoodDetail-TableDelegate.swift */,
+				3AA7897F244C075700B74951 /* DietFoodsController.swift */,
+				3AA78981244C079A00B74951 /* DietFoodsController-CollectionDelegate.swift */,
+				3ABD8FDA245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift */,
+				3A5E349024521C5800F9996F /* DietFoodsController-DragDelegate.swift */,
+				3ABD8FD2245093F500FEB034 /* DietSymptomsController.swift */,
+				3ABD8FD42450A0C400FEB034 /* DietSymptoms-TableDelegate.swift */,
+				3ABD8FDC24512FC300FEB034 /* AddSymptomsController.swift */,
+				3A8A10642451390D00E7667A /* AddSymptomsController-TableDelegate.swift */,
+				3A6B1E342454AD0F00020225 /* SymptomDetailController.swift */,
+				3AE3E0E924550DB700D02509 /* SymptomRecordingsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A992FFB244260A600508A5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A992FFC244260C200508A5C /* AddFoodCell.swift */,
+				3AA7897D244B8E5E00B74951 /* FoodCell.swift */,
+				3A3A598B244CD55C009C92D3 /* DietFoodCell.swift */,
+				3ABD8FD62450B13600FEB034 /* DietSymptomCell.swift */,
+				3ABD8FD82450C16300FEB034 /* LoadingButton.swift */,
+				3ABD8FDE2451315100FEB034 /* AddSymptomCell.swift */,
+				3AFA762D2452672500425941 /* RecycleBinFoodDropView.swift */,
+				3AFA763324529ED300425941 /* DietDetailsTabBar.swift */,
+				3AA680062455120D00D06B44 /* SymptomRecordingCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3ABD8FCB244FC99900FEB034 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A992FFB244260A600508A5C /* Model */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3AC22FFB244129740043AEC4 = {
+			isa = PBXGroup;
+			children = (
+				3AC23006244129740043AEC4 /* Eatlimination */,
+				3AC2301D244129760043AEC4 /* EatliminationTests */,
+				3AC23028244129760043AEC4 /* EatliminationUITests */,
+				3AC23005244129740043AEC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AC23005244129740043AEC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AC23004244129740043AEC4 /* Eatlimination.app */,
+				3AC2301A244129760043AEC4 /* EatliminationTests.xctest */,
+				3AC23025244129760043AEC4 /* EatliminationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AC23006244129740043AEC4 /* Eatlimination */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD8FCB244FC99900FEB034 /* UI */,
+				3A2A73D12443EB4B00AF2D64 /* Storyboard */,
+				3A992FF6244252C600508A5C /* Controller */,
+				3A992FF32442294600508A5C /* Data */,
+				3A992FE2244146CD00508A5C /* Network */,
+				3AC23007244129740043AEC4 /* AppDelegate.swift */,
+				3AC23009244129740043AEC4 /* SceneDelegate.swift */,
+				3AC23010244129760043AEC4 /* Assets.xcassets */,
+				3AC23015244129760043AEC4 /* Info.plist */,
+			);
+			path = Eatlimination;
+			sourceTree = "<group>";
+		};
+		3AC2301D244129760043AEC4 /* EatliminationTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2301E244129760043AEC4 /* EatliminationTests.swift */,
+				3AC23020244129760043AEC4 /* Info.plist */,
+			);
+			path = EatliminationTests;
+			sourceTree = "<group>";
+		};
+		3AC23028244129760043AEC4 /* EatliminationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3AC23029244129760043AEC4 /* EatliminationUITests.swift */,
+				3AC2302B244129760043AEC4 /* Info.plist */,
+			);
+			path = EatliminationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AC23003244129740043AEC4 /* Eatlimination */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC2302E244129760043AEC4 /* Build configuration list for PBXNativeTarget "Eatlimination" */;
+			buildPhases = (
+				3AC23000244129740043AEC4 /* Sources */,
+				3AC23001244129740043AEC4 /* Frameworks */,
+				3AC23002244129740043AEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eatlimination;
+			productName = Eatlimination;
+			productReference = 3AC23004244129740043AEC4 /* Eatlimination.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AC23019244129760043AEC4 /* EatliminationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC23031244129760043AEC4 /* Build configuration list for PBXNativeTarget "EatliminationTests" */;
+			buildPhases = (
+				3AC23016244129760043AEC4 /* Sources */,
+				3AC23017244129760043AEC4 /* Frameworks */,
+				3AC23018244129760043AEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AC2301C244129760043AEC4 /* PBXTargetDependency */,
+			);
+			name = EatliminationTests;
+			productName = EatliminationTests;
+			productReference = 3AC2301A244129760043AEC4 /* EatliminationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3AC23024244129760043AEC4 /* EatliminationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC23034244129760043AEC4 /* Build configuration list for PBXNativeTarget "EatliminationUITests" */;
+			buildPhases = (
+				3AC23021244129760043AEC4 /* Sources */,
+				3AC23022244129760043AEC4 /* Frameworks */,
+				3AC23023244129760043AEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AC23027244129760043AEC4 /* PBXTargetDependency */,
+			);
+			name = EatliminationUITests;
+			productName = EatliminationUITests;
+			productReference = 3AC23025244129760043AEC4 /* EatliminationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AC22FFC244129740043AEC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					3AC23003244129740043AEC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3AC23019244129760043AEC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3AC23003244129740043AEC4;
+					};
+					3AC23024244129760043AEC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3AC23003244129740043AEC4;
+					};
+				};
+			};
+			buildConfigurationList = 3AC22FFF244129740043AEC4 /* Build configuration list for PBXProject "Eatlimination" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AC22FFB244129740043AEC4;
+			productRefGroup = 3AC23005244129740043AEC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AC23003244129740043AEC4 /* Eatlimination */,
+				3AC23019244129760043AEC4 /* EatliminationTests */,
+				3AC23024244129760043AEC4 /* EatliminationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AC23002244129740043AEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC23014244129760043AEC4 /* LaunchScreen.storyboard in Resources */,
+				3AC23011244129760043AEC4 /* Assets.xcassets in Resources */,
+				3AC2300F244129740043AEC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC23018244129760043AEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC23023244129760043AEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AC23000244129740043AEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD8FD52450A0C400FEB034 /* DietSymptoms-TableDelegate.swift in Sources */,
+				3AA78980244C075700B74951 /* DietFoodsController.swift in Sources */,
+				3A06D47724495BB300BF8271 /* StartController-FoodTableDelegate.swift in Sources */,
+				3AD9893D244CABAF0095CA2C /* InitialData.swift in Sources */,
+				3AA78984244C0EBA00B74951 /* BaseEatliminationController.swift in Sources */,
+				3AA7897E244B8E5E00B74951 /* FoodCell.swift in Sources */,
+				3A2A73CA24428D6600AF2D64 /* SpoonFoodAuto.swift in Sources */,
+				3AA680072455120D00D06B44 /* SymptomRecordingCell.swift in Sources */,
+				3A8A10652451390D00E7667A /* AddSymptomsController-TableDelegate.swift in Sources */,
+				3AA78982244C079A00B74951 /* DietFoodsController-CollectionDelegate.swift in Sources */,
+				3AFA763224529DA700425941 /* CallbackProtocols.swift in Sources */,
+				3AFA763424529ED300425941 /* DietDetailsTabBar.swift in Sources */,
+				3A3A598C244CD55C009C92D3 /* DietFoodCell.swift in Sources */,
+				3A6B1E332454770800020225 /* SymptomRecordDataObject.swift in Sources */,
+				3AC2300C244129740043AEC4 /* StartController.swift in Sources */,
+				3A5E349124521C5800F9996F /* DietFoodsController-DragDelegate.swift in Sources */,
+				3A992FF22442293D00508A5C /* Eatlimination.xcdatamodeld in Sources */,
+				3A453CC7244282BD00CBD3F4 /* SpoonacularApi.swift in Sources */,
+				3AC23008244129740043AEC4 /* AppDelegate.swift in Sources */,
+				3AFA762E2452672500425941 /* RecycleBinFoodDropView.swift in Sources */,
+				3A4C275D244943A100D63334 /* DBOProvider.swift in Sources */,
+				3A2A73D3244417A200AF2D64 /* FoodDetail-TableDelegate.swift in Sources */,
+				3ABD8FD72450B13600FEB034 /* DietSymptomCell.swift in Sources */,
+				3A2A73D02443BDD500AF2D64 /* FoodDetailController.swift in Sources */,
+				3ABD8FDB245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift in Sources */,
+				3A6B1E352454AD0F00020225 /* SymptomDetailController.swift in Sources */,
+				3A8793032446BBBF00369DB3 /* BaseDataObject.swift in Sources */,
+				3AD9893B244CA7400095CA2C /* SymptomDataObject.swift in Sources */,
+				3AC2300A244129740043AEC4 /* SceneDelegate.swift in Sources */,
+				3A8792FF2446B6D400369DB3 /* FoodDataObject.swift in Sources */,
+				3A992FFA24425FBD00508A5C /* AddFoodsController-SearchDelegate.swift in Sources */,
+				3A2A73CE24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift in Sources */,
+				3A992FE6244148B800508A5C /* BaseApi.swift in Sources */,
+				3A992FF8244252E000508A5C /* AddFoodsController.swift in Sources */,
+				3AFA76362452A24000425941 /* BaseDietDetailsTabBarController.swift in Sources */,
+				3A992FFD244260C200508A5C /* AddFoodCell.swift in Sources */,
+				3ABD8FDF2451315100FEB034 /* AddSymptomCell.swift in Sources */,
+				3ABD8FDD24512FC300FEB034 /* AddSymptomsController.swift in Sources */,
+				3A992FED2441527E00508A5C /* ApiError.swift in Sources */,
+				3ABD8FD3245093F500FEB034 /* DietSymptomsController.swift in Sources */,
+				3ABD8FD92450C16300FEB034 /* LoadingButton.swift in Sources */,
+				3AE3E0EA24550DB700D02509 /* SymptomRecordingsController.swift in Sources */,
+				3A992FF52442349400508A5C /* CoreDataManager.swift in Sources */,
+				3A8793012446B6E800369DB3 /* DietDataObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC23016244129760043AEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC2301F244129760043AEC4 /* EatliminationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC23021244129760043AEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC2302A244129760043AEC4 /* EatliminationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AC2301C244129760043AEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AC23003244129740043AEC4 /* Eatlimination */;
+			targetProxy = 3AC2301B244129760043AEC4 /* PBXContainerItemProxy */;
+		};
+		3AC23027244129760043AEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AC23003244129740043AEC4 /* Eatlimination */;
+			targetProxy = 3AC23026244129760043AEC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AC2300D244129740043AEC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC2300E244129740043AEC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AC23012244129760043AEC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC23013244129760043AEC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AC2302C244129760043AEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AC2302D244129760043AEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AC2302F244129760043AEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93SE2VPUSF;
+				INFOPLIST_FILE = Eatlimination/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotiabank.banking.test.Eatlimination;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AC23030244129760043AEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93SE2VPUSF;
+				INFOPLIST_FILE = Eatlimination/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotiabank.banking.test.Eatlimination;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3AC23032244129760043AEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BK5XHC9GN;
+				INFOPLIST_FILE = EatliminationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihadzhi.EatliminationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eatlimination.app/Eatlimination";
+			};
+			name = Debug;
+		};
+		3AC23033244129760043AEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BK5XHC9GN;
+				INFOPLIST_FILE = EatliminationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihadzhi.EatliminationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eatlimination.app/Eatlimination";
+			};
+			name = Release;
+		};
+		3AC23035244129760043AEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BK5XHC9GN;
+				INFOPLIST_FILE = EatliminationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihadzhi.EatliminationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Eatlimination;
+			};
+			name = Debug;
+		};
+		3AC23036244129760043AEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BK5XHC9GN;
+				INFOPLIST_FILE = EatliminationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihadzhi.EatliminationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Eatlimination;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AC22FFF244129740043AEC4 /* Build configuration list for PBXProject "Eatlimination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC2302C244129760043AEC4 /* Debug */,
+				3AC2302D244129760043AEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC2302E244129760043AEC4 /* Build configuration list for PBXNativeTarget "Eatlimination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC2302F244129760043AEC4 /* Debug */,
+				3AC23030244129760043AEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC23031244129760043AEC4 /* Build configuration list for PBXNativeTarget "EatliminationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC23032244129760043AEC4 /* Debug */,
+				3AC23033244129760043AEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC23034244129760043AEC4 /* Build configuration list for PBXNativeTarget "EatliminationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC23035244129760043AEC4 /* Debug */,
+				3AC23036244129760043AEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A992FF02442293D00508A5C /* Eatlimination.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A992FF12442293D00508A5C /* Earlimination.xcdatamodel */,
+			);
+			currentVersion = 3A992FF12442293D00508A5C /* Earlimination.xcdatamodel */;
+			path = Eatlimination.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3AC22FFC244129740043AEC4 /* Project object */;
+}
