@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G3020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DietData" representedClassName="DietData" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="started" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FoodData" inverseName="diet" inverseEntity="FoodData"/>
+        <relationship name="symptoms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SymptomData" inverseName="diet" inverseEntity="SymptomData"/>
+    </entity>
+    <entity name="FoodData" representedClassName="FoodData" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="externalId" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="tested" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="diet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DietData" inverseName="foods" inverseEntity="DietData"/>
+    </entity>
+    <entity name="SymptomData" representedClassName="SymptomData" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageName" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="diet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DietData" inverseName="symptoms" inverseEntity="DietData"/>
+        <relationship name="records" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SymptomRecordData" inverseName="symptom" inverseEntity="SymptomRecordData"/>
+    </entity>
+    <entity name="SymptomRecordData" representedClassName="SymptomRecordData" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+        <relationship name="symptom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SymptomData" inverseName="records" inverseEntity="SymptomData"/>
+    </entity>
+    <elements>
+        <element name="DietData" positionX="-63" positionY="9" width="128" height="118"/>
+        <element name="FoodData" positionX="-49.140625" positionY="-234.4921875" width="104.34765625" height="148"/>
+        <element name="SymptomData" positionX="215.16015625" positionY="-20.13671875" width="128" height="133"/>
+        <element name="SymptomRecordData" positionX="72" positionY="-81" width="128" height="103"/>
+    </elements>
+</model>
