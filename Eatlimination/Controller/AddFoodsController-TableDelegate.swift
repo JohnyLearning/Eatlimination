@@ -19,28 +19,16 @@ extension AddFoodsController: UITableViewDataSource, UITableViewDelegate {
         cell.name.text = foodInfo?.name
         cell.foodImage.image = nil
         cell.selectionStyle = .none
-        downloadImage(foodCell: cell, imageFile: foods?[indexPath.row].image, index: indexPath)
-        
+        downloadImage(imageFile: foods?[indexPath.row].image, activityIndicator: cell.activityIndicator) { imageData in
+            if let _ = imageData {
+                cell.foodImage?.image = imageData
+            }
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         openFoodDetails(food: foods?[indexPath.row])
-    }
-    
-    private func downloadImage(foodCell: AddFoodCell, imageFile: String?, index: IndexPath) {
-        if let imageFile = imageFile {
-            SpoonacularApi.downloadImage(imageFile: imageFile, size: .size100) { (data, error) in
-                DispatchQueue.main.async {
-                    if let data = data {
-                        foodCell.foodImage?.image = UIImage(data: data as Data)
-                    } else {
-                        foodCell.foodImage?.image = UIImage(named: "no-image-icon")
-                    }
-                    foodCell.activityIndicator.stopAnimating()
-                }
-            }
-        }
     }
     
     private func openFoodDetails(food: SpoonFoodAuto?) {

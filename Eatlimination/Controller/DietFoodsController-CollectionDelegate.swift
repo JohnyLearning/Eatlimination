@@ -17,26 +17,13 @@ extension DietFoodsController: UICollectionViewDelegate, UICollectionViewDataSou
         }
         if let food = foods?[indexPath.row] {
             cell.name.text = food.title
-            downloadImage(foodCell: cell, imageFile: food.imageUrl, index: indexPath)
-        }
-        return cell
-    }
-    
-    
-    private func downloadImage(foodCell: DietFoodCell, imageFile: String?, index: IndexPath) {
-        if let imageFile = imageFile {
-            foodCell.activityIndicator.startAnimating()
-            SpoonacularApi.downloadImage(imageFile: imageFile, size: .size100) { (data, error) in
-                DispatchQueue.main.async {
-                    if let data = data {
-                        foodCell.foodImage?.image = UIImage(data: data as Data)
-                    } else {
-                        foodCell.foodImage?.image = UIImage(named: "no-image-icon")
-                    }
-                    foodCell.activityIndicator.stopAnimating()
+            downloadImage(imageFile: food.imageUrl, activityIndicator: cell.activityIndicator) { imageData in
+                if let _ = imageData {
+                    cell.foodImage?.image = imageData
                 }
             }
         }
+        return cell
     }
     
 }

@@ -33,7 +33,7 @@ class AddSymptomsController: BaseEatliminationController {
     
     @objc private func goBack(sender: UIBarButtonItem) {
         if changesMade, let refreshCallback = onCompleteDelegate {
-            refreshCallback.refresh(doit: true)
+            refreshCallback.refresh()
         }
         _ = navigationController?.popViewController(animated: true)
     }
