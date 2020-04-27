@@ -11,7 +11,6 @@
 		3A2A73CA24428D6600AF2D64 /* SpoonFoodAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73C924428D6600AF2D64 /* SpoonFoodAuto.swift */; };
 		3A2A73CE24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73CD24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift */; };
 		3A2A73D02443BDD500AF2D64 /* FoodDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73CF2443BDD500AF2D64 /* FoodDetailController.swift */; };
-		3A2A73D3244417A200AF2D64 /* FoodDetail-TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A73D2244417A200AF2D64 /* FoodDetail-TableDelegate.swift */; };
 		3A3A598C244CD55C009C92D3 /* DietFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A598B244CD55C009C92D3 /* DietFoodCell.swift */; };
 		3A453CC7244282BD00CBD3F4 /* SpoonacularApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A453CC6244282BD00CBD3F4 /* SpoonacularApi.swift */; };
 		3A4C275D244943A100D63334 /* DBOProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C275C244943A100D63334 /* DBOProvider.swift */; };
@@ -80,7 +79,6 @@
 		3A2A73C924428D6600AF2D64 /* SpoonFoodAuto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonFoodAuto.swift; sourceTree = "<group>"; };
 		3A2A73CD24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddFoodsController-TableDelegate.swift"; sourceTree = "<group>"; };
 		3A2A73CF2443BDD500AF2D64 /* FoodDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailController.swift; sourceTree = "<group>"; };
-		3A2A73D2244417A200AF2D64 /* FoodDetail-TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodDetail-TableDelegate.swift"; sourceTree = "<group>"; };
 		3A3A598B244CD55C009C92D3 /* DietFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFoodCell.swift; sourceTree = "<group>"; };
 		3A453CC6244282BD00CBD3F4 /* SpoonacularApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoonacularApi.swift; sourceTree = "<group>"; };
 		3A4C275C244943A100D63334 /* DBOProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBOProvider.swift; sourceTree = "<group>"; };
@@ -238,7 +236,6 @@
 				3A992FF924425FBD00508A5C /* AddFoodsController-SearchDelegate.swift */,
 				3A2A73CD24429B3100AF2D64 /* AddFoodsController-TableDelegate.swift */,
 				3A2A73CF2443BDD500AF2D64 /* FoodDetailController.swift */,
-				3A2A73D2244417A200AF2D64 /* FoodDetail-TableDelegate.swift */,
 				3AA7897F244C075700B74951 /* DietFoodsController.swift */,
 				3AA78981244C079A00B74951 /* DietFoodsController-CollectionDelegate.swift */,
 				3ABD8FDA245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift */,
@@ -482,7 +479,6 @@
 				3AC23008244129740043AEC4 /* AppDelegate.swift in Sources */,
 				3AFA762E2452672500425941 /* RecycleBinFoodDropView.swift in Sources */,
 				3A4C275D244943A100D63334 /* DBOProvider.swift in Sources */,
-				3A2A73D3244417A200AF2D64 /* FoodDetail-TableDelegate.swift in Sources */,
 				3ABD8FD72450B13600FEB034 /* DietSymptomCell.swift in Sources */,
 				3A2A73D02443BDD500AF2D64 /* FoodDetailController.swift in Sources */,
 				3ABD8FDB245103BB00FEB034 /* DietFoodsController-LayoutExtension.swift in Sources */,

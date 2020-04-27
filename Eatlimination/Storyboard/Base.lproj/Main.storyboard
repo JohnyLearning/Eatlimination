@@ -678,7 +678,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-LO-dxq">
-                                <rect key="frame" x="124" y="719" width="166" height="60"/>
+                                <rect key="frame" x="93.5" y="659" width="227" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add Food" image="diet">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -748,8 +748,8 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Nn2-0u-pM1" kind="relationship" relationship="viewControllers" id="6UE-Wq-XuU"/>
                         <segue destination="fOP-Wg-4eI" kind="relationship" relationship="viewControllers" id="FHR-1A-HmA"/>
+                        <segue destination="Nn2-0u-pM1" kind="relationship" relationship="viewControllers" id="6UE-Wq-XuU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L7v-9r-Ayz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

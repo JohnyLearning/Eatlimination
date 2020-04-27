@@ -1,9 +1,6 @@
 //
 //  SymptomRecordingsController.swift
 //  Eatlimination
-//
-//  Created by Ivan Hadzhiiliev on 2020-04-25.
-//
 
 import Foundation
 import UIKit
