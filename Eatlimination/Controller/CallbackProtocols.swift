@@ -5,7 +5,7 @@
 import Foundation
 
 protocol RefreshList: NSObjectProtocol {
-    func refresh(doit: Bool)
+    func refresh()
 }
 
 protocol OnComplete: NSObjectProtocol {

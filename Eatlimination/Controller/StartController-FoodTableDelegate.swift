@@ -36,7 +36,11 @@ extension StartController: UITableViewDelegate, UITableViewDataSource {
         cell.addToDiet.setImage(UIImage(systemName: addToDietIcon), for: .normal)
         cell.addToDiet.tintColor = addToDietTint
         cell.selectionStyle = .none
-        downloadImage(foodCell: cell, imageFile: food.imageUrl, index: indexPath)
+        downloadImage(imageFile: food.imageUrl, activityIndicator: cell.activityIndicator) { imageData in
+            if let _ = imageData {
+                cell.foodImage?.image = imageData
+            }
+        }
         return cell
     }
     
@@ -46,7 +50,7 @@ extension StartController: UITableViewDelegate, UITableViewDataSource {
             DispatchQueue.main.async {
                 self.foodDataObject.addFood(toDiet: activeDiet, food: self.foods[sender.tag])
                 button.hideLoading(image: UIImage(systemName: "bookmark.fill"), tintColor: UIColor.systemGreen)
-                self.refresh(doit: true)
+                self.refresh()
             }
         }
     }
@@ -66,22 +70,7 @@ extension StartController: UITableViewDelegate, UITableViewDataSource {
             DispatchQueue.main.async {
                 FoodDataObject.delete(food: self.foods[indexPath.row])
                 self.foods.remove(at: indexPath.row)
-                self.refresh(doit: true)
-            }
-        }
-    }
-    
-    private func downloadImage(foodCell: FoodCell, imageFile: String?, index: IndexPath) {
-        if let imageFile = imageFile {
-            SpoonacularApi.downloadImage(imageFile: imageFile, size: .size100) { (data, error) in
-                DispatchQueue.main.async {
-                    if let data = data {
-                        foodCell.foodImage?.image = UIImage(data: data as Data)
-                    } else {
-                        foodCell.foodImage?.image = UIImage(named: "no-image-icon")
-                    }
-                    foodCell.activityIndicator.stopAnimating()
-                }
+                self.refresh()
             }
         }
     }

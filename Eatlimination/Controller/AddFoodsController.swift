@@ -28,7 +28,7 @@ class AddFoodsController: BaseEatliminationController {
 
 extension AddFoodsController: OnComplete {
     func execute() {
-        refreshFoodsDelegate?.refresh(doit: true)
+        refreshFoodsDelegate?.refresh()
         self.navigationController?.popViewController(animated: true)
     }
 }

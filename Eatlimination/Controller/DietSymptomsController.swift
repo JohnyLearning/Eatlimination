@@ -28,10 +28,8 @@ class DietSymptomsController: BaseDietDetailsTabBarController {
 }
 
 extension DietSymptomsController: RefreshList {
-    func refresh(doit: Bool) {
-        if doit {
-            loadSymptoms()
-            symptomsTable.reloadData()
-        }
+    func refresh() {
+        loadSymptoms()
+        symptomsTable.reloadData()
     }
 }

@@ -20,10 +20,16 @@ class FoodDetailController: BaseEatliminationController {
     func prepare(food: SpoonFoodAuto) {
         self.food = food
     }
-    
+            
     override func viewDidLoad() {
         name.text = food?.name
-        downloadImage()
+        if let imageFile = food?.image {
+            downloadImage(imageFile: imageFile, activityIndicator: activityIndicator, imageSize: .size500) { imageData in
+                if let _ = imageData {
+                    self.photo.image = imageData
+                }
+            }
+        }
     }
     
     @IBAction func close(_ sender: Any) {
@@ -40,22 +46,6 @@ class FoodDetailController: BaseEatliminationController {
                 showError(title: FoodDetailController.errorTitle, message: errorMessage)
             } catch {
                 showError(title: FoodDetailController.errorTitle, message: "Something went wrong.")
-            }
-        }
-    }
-    
-    private func downloadImage() {
-        if let imageFile = food?.image {
-            activityIndicator.startAnimating()
-            SpoonacularApi.downloadImage(imageFile: imageFile, size: .size500) { (data, error) in
-                DispatchQueue.main.async {
-                    if let data = data {
-                        self.photo.image = UIImage(data: data as Data)
-                    } else {
-                        self.photo.image = UIImage(named: "no-image-icon")
-                    }
-                    self.activityIndicator.stopAnimating()
-                }
             }
         }
     }

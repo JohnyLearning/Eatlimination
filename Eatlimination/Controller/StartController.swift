@@ -51,10 +51,8 @@ class StartController: BaseEatliminationController {
 }
 
 extension StartController: RefreshList {
-    func refresh(doit: Bool) {
-        if doit {
-            updateView()
-            tableView.reloadData()
-        }
+    func refresh() {
+        updateView()
+        tableView.reloadData()
     }
 }

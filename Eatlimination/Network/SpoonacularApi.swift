@@ -27,7 +27,7 @@ class SpoonacularApi: BaseApi {
         
         var stringValue: String {
             switch self {
-            case .searchAutocomplete(let query): return "\(Endpoints.base)food/ingredients/autocomplete?apiKey=\(SpoonacularApi.apiKey)&number=20&query=\(query)&metaInformation=true"
+            case .searchAutocomplete(let query): return "\(Endpoints.base)food/ingredients/autocomplete?apiKey=\(SpoonacularApi.apiKey)&number=20&query=\(query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")&metaInformation=true"
             case .downloadImage(let size, let image): return "\(Endpoints.images_base)ingredients_\(size.rawValue)x\(size.rawValue)/\(image)"
             }
         }
